@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/adminPage/admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@300&family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal-back-ground-page"></div>
+    <section class="dashboard_items">
+        <div class="one">
+            <div class="profile_picture">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>                  
+            </div>
+            <div class="user_info">
+                <h3>Administator</h1>
+                <p>Admin dashboard</p>
+            </div>
+        </div>
+
+        <div class="two activePage">
+            Users List
+            <i class="fa-solid fa-user icon-menu"></i>
+        </div>
+
+        <div class="three">
+            Product List
+            <i class="fa-solid fa-box icon-menu"></i>
+        </div>
+
+        <div class="four">
+            Add Product
+            <i class="fa-sharp fa-solid fa-square-plus icon-menu"></i>
+        </div>
+
+        <div class="five">
+            Sell Status
+            <i class="fa-solid fa-wallet icon-menu"></i>
+        </div>
+
+        <div class="six">
+            Notifications
+            <i class="fa-solid fa-bell icon-menu"></i>
+        </div>
+        
+        <div class="seven">
+            Settings 
+            <i class="fa-sharp fa-solid fa-gear icon-menu"></i>
+        </div>
+
+        <div class="fifteen">
+            Log out
+            <i class="fa-sharp fa-solid fa-door-open icon-menu"></i>
+        </div>
+    </section>
+    <main>
+        <header></header>
+        <section class="main-page">
+            
+            <!-- User list page -->
+            <div class="users-list-container"></div>
+
+            <!-- Add product Page  -->
+            <form action="">
+                <div class="form-inputs">
+                    <label for="new-prod-name">Enter Product Name : </label>
+                    <input id="new-prod-name" type="text" placeholder="example : Maryam Plant">
+                    <label for="new-prod-name">Enter Product Price :</label>
+                    <input id="new-prod-price" type="number" placeholder="example : 20$">
+                    <label for="new-prod-pic">Choose Product Picture :</label>
+                    <input id="new-prod-picture" type="file">
+                    <div class="form-btns">
+                        <input id="submit-product" type="submit">
+                        <button class="reset-page-btn">reset</button>
+                    </div>
+                </div>
+                <img id="img-preview"></img>
+            </form>
+
+            <!-- Product list  -->
+            <div class="prod-container"></div>
+
+            <!-- Selling Status Page  -->
+            <canvas id="selling-chart"></canvas>
+
+            <!-- Edit product page  -->
+            <div class="edit-page">
+                <span class="close-edit-page-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <label for="new-prod-prop-name">Write down new product name :</label>
+                <input id="new-prod-prop-name" type="text" placeholder="Example : Roz plant">
+                <label for="new-prod-prop-price">Write down new product price :</label>
+                <input id="new-prod-prop-price" type="number" placeholder="Example : 12">
+                <div class="image-prop">
+                    <div class="image-input-con">
+                        <label for="new-prod-prop-img">Upload new product image :</label>
+                        <input id="new-prod-prop-img" type="file">
+                    </div>
+                    <div class="image-container">
+                        <img class="edit-page-image-tag" src="" alt="">
+                    </div>
+                </div>
+                <button class="submit-new-prod">submit</button>
+                <button class="reset-inputs">reset</button>
+            </div>
+
+        </section>
+    </main> 
+    <script src="/public/adminApp.js"></script>
+</body>
+</html>

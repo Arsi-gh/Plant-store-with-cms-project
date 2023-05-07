@@ -1,0 +1,30 @@
+.user{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.user-name , .user-email , .user-pass{
+    font-size: large;
+    font-weight: 300;
+}
+
+.user-delete-btn{
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    border : none;
+    border-radius: 3px;
+    font-weight: 550;
+}
+
+.user-delete-btn{
+    background-color: #f37979;
+}
+
+.user-delete-btn:hover{
+    background-color: #e27272;
+}

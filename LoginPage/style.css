@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(117, 189, 127);
+  font-family: Roboto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 27.3rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.profile_picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  border: 2px solid #007e06;
+  top: -65px;
+  left: 165px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.profile_picture > svg {
+  width: 65%;
+  color: #353535;
+}
+
+form {
+  margin: 10px;
+  margin-top: 50px;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #26860b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+label {
+  padding: 20px;
+}
+
+.submit_button {
+  margin-top: 0;
+  padding: 5px;
+  border: 2px solid #a2ce96;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.submit_button:hover {
+  background-color: #cbffbd;
+}
+
+.reset_button {
+  margin-top: 0;
+  padding: 5px;
+  border: 2px solid #a2ce96;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.reset_button:hover {
+  background-color: #cbffbd;
+}
+
+p {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #3ac214;
+}
+
+.modal {
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+.success {
+  background-color: #a5c983;;
+}
+
+.error {
+  background-color: #f76464;
+}
+
+.name-valid,
+.pass-valid,
+.email-valid {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name-valid p,
+.pass-valid p,
+.email-valid p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pass-section {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  left: 92%;
+  top: 20%;
+  cursor: pointer;
+}
+
+.toggle-password svg {
+  width: 70%;
+}
+
+
+
