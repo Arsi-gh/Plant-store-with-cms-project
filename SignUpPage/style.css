@@ -85,7 +85,6 @@ label {
 }
 
 p {
-  margin-top: 0.5rem;
   text-align: center;
   font-size: 14px;
 }
@@ -145,5 +144,24 @@ a {
   width: 70%;
 }
 
+.valid-notif{
+  padding: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.invalid{
+  color: red;
+}
 
+.valid{
+  color: green;
+}
+
+.hide-elem{
+  display: none;
+}
