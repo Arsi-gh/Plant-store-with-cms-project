@@ -60,33 +60,27 @@ label {
   padding: 20px;
 }
 
-.submit_button {
+.submit_button , .reset_button {
   margin-top: 0;
-  padding: 5px;
+  padding: 10px;
   border: 2px solid #a2ce96;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.submit_button:hover {
-  background-color: #cbffbd;
-}
-
-.reset_button {
-  margin-top: 0;
-  padding: 5px;
-  border: 2px solid #a2ce96;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.reset_button:hover {
-  background-color: #cbffbd;
+.submit_button:hover  , .reset_button:hover{
+  background-color: #3e7c5c31;
 }
 
 p {
   text-align: center;
   font-size: 14px;
+}
+
+.login-guide {
+  margin-top: 1rem;
+  font-size: medium;
 }
 
 a {
@@ -136,7 +130,7 @@ a {
 .toggle-password {
   position: absolute;
   left: 92%;
-  top: 20%;
+  top: 23%;
   cursor: pointer;
 }
 
