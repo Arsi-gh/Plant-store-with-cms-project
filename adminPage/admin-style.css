@@ -73,7 +73,7 @@ main > .main-page{
 
 .icon-menu {
     position: absolute;
-    left : 80%
+    left: 80%;
 }
 
 .one{
@@ -169,6 +169,17 @@ main > .main-page{
     background-color: rgba(36, 153, 0, 0.342);
 }
 
+.two , .three , .four , .five , .six , .seven {
+    margin: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    padding-bottom: 0.7rem;
+    border-radius: 5px;
+}
+
 .main-page{
     display: flex;
     justify-content: center;
@@ -219,7 +230,7 @@ table td {
     border-radius: 3px;
 }
 
-.main-page > form > .form-inputs > .form-btns > button , .main-page > form > .form-inputs > .form-btns > input , .edit-page > button , .close-edit-page-btn{
+.main-page > form > .form-inputs > .form-btns > button , .main-page > form > .form-inputs > .form-btns > input , .edit-page > button{
     padding: 0.5rem 2.5rem;
     background-color: #ffffff;
     border: none;
@@ -228,7 +239,7 @@ table td {
     cursor: pointer;
 }
 
-.main-page > form > .form-inputs > .form-btns > button:hover , .main-page > form > .form-inputs > .form-btns > input:hover , .edit-page > button:hover , .close-edit-page-btn:hover{
+.main-page > form > .form-inputs > .form-btns > button:hover , .main-page > form > .form-inputs > .form-btns > input:hover , .edit-page > button:hover{
     background-color: #e6e6e6;
 } 
 
@@ -270,10 +281,10 @@ table td {
 
 .edit-page{
     top: 10%;
-    left: 30%;
+    left: 10%;
     position: absolute;
     background-color: #add3c1;
-    width: 20rem;
+    width: 50rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -284,36 +295,72 @@ table td {
     z-index: 200;
 }
 
-.edit-page > button{
+.upper-edit-page{
+    width: 100%;
+    height: 16rem;
+    display: flex;
+}
+
+.edit-bottom-page{
+    width: 100%;
+    height: 20%;
+}
+
+.edit-bottom-page > .control-buttons{
+    width: 100%;
+    display: flex;
+}
+
+.edit-right-page , .edit-left-page{
+    width: 50%;
+    height: 100%;
+}
+
+.edit-right-page{
+    display: flex;
+}
+
+.edit-left-page{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.edit-left-page > input{
     padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: -0.5rem;
+}
+
+.edit-bottom-page > .control-buttons > button , .close-edit-page-btn{
+    width: 50%;
+    padding: 0.6rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+
+.edit-bottom-page > .control-buttons > button:hover , .close-edit-page-btn:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .close-edit-page-btn{
-    position: absolute;
-    right : 2%;
-    top : 2%;
-    padding: 0;
-    width: 1.6rem;
-    height: 1.6rem;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
+    width: 99.2%;
 }
 
 .image-prop{
     display: flex;
-}
-
-.image-input-con {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 71%;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-prop > .image-container {
-    width: 10rem;
-    height: 5rem;
+    width: 90%;
+    height: 90%;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
