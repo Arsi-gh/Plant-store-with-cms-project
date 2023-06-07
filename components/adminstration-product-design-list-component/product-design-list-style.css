@@ -16,6 +16,12 @@
     width: 4rem;
     height: 4rem;
 }
+
+.product-controls{
+    display: flex;
+    gap: 1rem;
+}
+
 .product-edit-btn , .product-delete-btn{
     padding: 0.5rem 1rem;
     font-size: 15px;
@@ -23,6 +29,8 @@
     border : none;
     border-radius: 3px;
     font-weight: 550;
+    display: flex;
+    gap: 10px;
 }
 
 .product-edit-btn {

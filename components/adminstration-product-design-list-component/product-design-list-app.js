@@ -2,6 +2,7 @@ import {displayEditProdPage , supabase } from "./../../adminPage/admin-app.js"
 
 let template = document.createElement("template");
 template.innerHTML = `
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="/components/adminstration-product-design-list-component/product-design-list-style.css">
 <div class="product">
 <span></span>
@@ -9,8 +10,14 @@ template.innerHTML = `
 <h4 class="product-price"></h4>
 <img class="product-img" src="" alt="">
 <div class="product-controls">    
-    <button class="product-edit-btn">Edit</button>
-    <button class="product-delete-btn">Delete</button>
+    <button class="product-edit-btn">
+      Edit
+      <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+      <button class="product-delete-btn">
+      Delete
+      <i class="fa-solid fa-trash"></i>
+    </button>
 </div>
 </div>
 `;

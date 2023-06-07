@@ -214,11 +214,24 @@ nameInput.addEventListener('focusout' , () =>{
   hideNotifsCon(nameValidationNotifsCon)
 })
 
+nameInput.addEventListener('focus' , () => {
+  nameValidationNotifsCon.classList.remove('hide-elem')
+})
+
 emailInput.addEventListener('focusout' , () =>{
   hideNotifsCon(emailValidationNotifsCon)
 })
+
+emailInput.addEventListener('focus' , () => {
+  emailValidationNotifsCon.classList.remove('hide-elem')
+})
+
 passwordInput.addEventListener('focusout' , () =>{
   hideNotifsCon(passwordValidationNotifsCon)
+})
+
+passwordInput.addEventListener('focus' , () => {
+  passwordValidationNotifsCon.classList.remove('hide-elem')
 })
 
 togglePasswordBtn.addEventListener('click' , togglePassFn)
