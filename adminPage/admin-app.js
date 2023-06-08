@@ -12,7 +12,7 @@ const $ = document;
 const dashboardMenu = $.querySelector('.dashboard_items')
 const mainPage = $.querySelector('main')
 
-//pages and their button variables
+//pages and their button 
 const usersListPage = $.querySelector(".users-list-container");
 const addProductPage = $.querySelector("form");
 const productListPage = $.querySelector(".prod-container");
@@ -22,7 +22,7 @@ const productListPageBtn = $.querySelector(".three");
 const sellsChartPage = $.querySelector("#selling-chart");
 const sellsChartPageBtn = $.querySelector(".five");
 
-// new product page contorl variables
+// new product page contorl 
 const productNameInput = $.querySelector("#new-prod-name");
 const productPriceInput = $.querySelector("#new-prod-price");
 const productImgInput = $.querySelector("#new-prod-picture");
@@ -115,12 +115,16 @@ const displaySellChart = () => {
   }
 };
 
-const displayEditProdPage = (prodName) => {
+const displayEditProdPage = (prodName , prodPrice , prodImage) => {
   pageBackground.style.display = 'block'
   editProdPage.style.display  = 'flex'
   newProductPropSubmit.addEventListener('click' , () => {
     uploadNewProdFn(prodName)
   })
+  newProductPropName.value = prodName
+  newProductPropPrice.value = prodPrice
+  newImagePreviewCon.style.display = 'block'
+  newImagePreviewCon.src = prodImage
   newProductPropReset.addEventListener('click' , resetEditPageFn)
   closeEditPageBtn.addEventListener('click' , hideEidtPage)
   newProductPropImg.addEventListener("input" , displayImagePreview)

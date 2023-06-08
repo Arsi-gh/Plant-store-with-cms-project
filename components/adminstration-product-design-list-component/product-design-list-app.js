@@ -40,9 +40,11 @@ class ProductList extends HTMLElement {
     
     let prodPrice = this.shadowRoot.querySelector(".product-price");
     prodPrice.innerHTML = `Price : ${this.getAttribute("prod-price")} $`;
+    this.dataset.prodPrice = this.getAttribute("prod-price")
     
     let prodImg = this.shadowRoot.querySelector(".product-img");
     prodImg.src = this.getAttribute("img-src");
+    this.dataset.prodImg = this.getAttribute("img-src")
 
     let editProdBtn = this.shadowRoot.querySelector(".product-edit-btn")
     editProdBtn.addEventListener('click' , () => {
@@ -71,7 +73,7 @@ class ProductList extends HTMLElement {
 
     let editProductBtn = this.shadowRoot.querySelector(".product-edit-btn")
     editProductBtn.addEventListener('click' , () => {
-      displayEditProdPage(this.dataset.productName)
+      displayEditProdPage(this.dataset.productName , +this.dataset.prodPrice , this.dataset.prodImg)
     })
   }
 
