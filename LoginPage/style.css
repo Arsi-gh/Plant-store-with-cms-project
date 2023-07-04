@@ -7,20 +7,57 @@
 }
 
 body {
-  background-color: rgb(117, 189, 127);
   font-family: Roboto;
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+}
+
+.images-con{
+  width: 60%;
+  background-color: #ffff;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.images-con > * {
+  max-width: 49%;
+  height: 20%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+.login-con {
+  right: 0;
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  z-index: 10;
+  background : linear-gradient(45deg , #75BD7F , #3e7846);
+  border-radius: 300px 0 0 300px;
+}
+
+.login-con > h2 {
+  width: 40%;
+  font-size: 70px;
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top: 29%;
+  right: 5%;
 }
 
 .container {
   width: 27.3rem;
-  background-color: #fff;
+  background-color: #f5f4f4;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 20px 15px;
-  position: relative;
+  position: absolute;
+  top: 25%;
+  left: -2%;
 }
 
 .profile_picture {
@@ -37,7 +74,7 @@ body {
   place-items: center;
 }
 
-.profile_picture > svg {
+.profile_picture > img {
   width: 65%;
   color: #353535;
 }
@@ -65,7 +102,7 @@ label {
   padding: 10px;
   border: 2px solid #a2ce96;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -134,5 +171,12 @@ a {
   width: 70%;
 }
 
+.button {
+  cursor: pointer;
+  background-color: #79b185;
+  border: none;
+}
 
-
+.button:hover {
+  background-color: #84a98c;
+}

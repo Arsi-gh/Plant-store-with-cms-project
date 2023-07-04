@@ -8,28 +8,37 @@ body{
     height: 100vh;
     display: flex;
     font-family: 'Rubik', sans-serif;
+    background-color: #ececec;
+    max-width: 90rem;
+    margin: auto;
+}
+
+.background-first-part{
+    width: 20rem;
+    height: 3.5rem;
+    position: fixed;
+    background-color: #84a98c;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    border-bottom-left-radius: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.background-second-part{
+    width: 90%;
+    height: 10rem;
+    position: fixed;
+    background-color: #495e50;
+    bottom: 0;
+    right: 0;
 }
 
 main{
     width: 85%;
     height: 100%;
-    background-color: rgb(247, 252, 250);
     position: relative;
-}
-
-main > header {
-    width: 100%;
-    height: 20%;
-    background-color: rgba(87, 250, 152, 0.459);
-}
-
-main > footer {
-    width: 15rem;
-    height: 20rem;
-    background-color: #88c4af;
-    position: absolute;
-    top: 59.8%;
-    right: 0;
 }
 
 main > .main-page{
@@ -38,16 +47,16 @@ main > .main-page{
     top: 5%;
     width: 90%;
     height: 90%;
-    background-color: rgb(246, 252, 244);
+    background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 2rem solid #ffffff;
+    border: 1px solid rgb(206, 206, 206);
 }
 
 .dashboard_items {
+    margin-left: 1rem;
     width: 15%;
     height: 100%;
-    background-color: #c8eccc9f;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16 , 1fr);
@@ -63,12 +72,16 @@ main > .main-page{
     flex-wrap: wrap;
 }
 
-.dashboard_items > *:hover {
-    background-color: #80c5899f;
+.dashboard-menu-options{
+    background-color: #cad2c5;
 }
 
+.dashboard-menu-options:hover{
+    background-color: #84a98c;
+} 
+
 .activePage{
-    background-color: #80c5899f;
+    background-color: #84a98c;
 }
 
 .icon-menu {
@@ -83,10 +96,7 @@ main > .main-page{
     justify-content: space-evenly;
     align-items: center;
     cursor: default;
-}
-
-.one:hover {
-    background-color: #DDF3DF;
+    color: #1f1f1f;
 }
 
 .profile_picture {
@@ -94,7 +104,7 @@ main > .main-page{
     height: 4rem;
     background-color: #ffffff;
     border-radius: 50%;
-    border: 2px solid #009b53;
+    border: 3px solid #cad2c5;
     display: grid;
     place-items: center;
 }
@@ -113,6 +123,7 @@ main > .main-page{
 
 .two{
     grid-row: 3/4;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .three{
@@ -166,18 +177,6 @@ main > .main-page{
 
 .fifteen {
     grid-row: 16/17;
-    background-color: rgba(36, 153, 0, 0.342);
-}
-
-.two , .three , .four , .five , .six , .seven {
-    margin: 0.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    padding: 0.5rem;
-    padding-top: 0.7rem;
-    padding-left: 1rem;
-    padding-bottom: 0.7rem;
-    border-radius: 5px;
 }
 
 .main-page{
@@ -202,12 +201,12 @@ table td {
 
 .main-page form {
     align-self: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: space-between;
     padding: 5rem;
-    background-color: #add3c1;
+    background-color: #CAD2C5;
     border-radius: 5px;
     display: none;
 }
@@ -248,7 +247,8 @@ table td {
 }
 
 #img-preview{
-    width: 50%;
+    width: 28rem;
+    height: 28rem;
     border-radius: 10px;
     background-color: #fcfcfc;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;

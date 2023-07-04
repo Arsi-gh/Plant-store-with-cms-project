@@ -7,6 +7,7 @@ module.exports = {
     loginApp : './LoginPage/app.js',
     mainApp : './main-page/main-app.js',
     signApp : './SignUpPage/app.js',
+    dashboardApp : './user-dashboard/userDashboard.js'
   },
   output: {
     path: path.join(__dirname, "public"),

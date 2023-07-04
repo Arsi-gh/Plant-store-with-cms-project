@@ -190,7 +190,7 @@ const submitNewUser = async () => {
       }
     }
   } else {
-    modalAlert(5000 , 'Your inserted properties are invalid , please rewrite them by validation guide' , '#e85165')
+    modalAlert(5000 , 'Your inserted properties are invalid , please rewrite them by validation guide and try again' , '#e85165')
     nameValidationNotifsCon.classList.remove('hide-elem')
     emailValidationNotifsCon.classList.remove('hide-elem')
     passwordValidationNotifsCon.classList.remove('hide-elem')

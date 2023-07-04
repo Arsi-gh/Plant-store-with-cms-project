@@ -46,6 +46,9 @@ const newProductPropReset = $.querySelector('.reset-inputs')
 const newImagePreviewCon = $.querySelector('.edit-page-image-tag')
 const pageBackground = $.querySelector('.modal-back-ground-page')
 
+//Date element variable 
+const dateElem = $.querySelector('.date-elem')
+
 const togglePage = (currentPage) => {
   usersListPage.style.display = "none";
   addProductPage.style.display = "none";
@@ -217,8 +220,14 @@ const resetEditPageFn = () => {
   newImagePreviewCon.style.display = 'none'
 }
 
+const dateUpdate = () => {
+  const newDate = new Date
+  dateElem.innerHTML = `Today : ${newDate.toISOString().slice(0 , 4)} / ${newDate.toISOString().slice(5 , 7)} / ${newDate.toISOString().slice(8 , 10)}`
+}
+
 window.addEventListener("load", () => {
   displaySellChart();
+  dateUpdate()
 
   window.addEventListener("resize", displaySellChart);
 

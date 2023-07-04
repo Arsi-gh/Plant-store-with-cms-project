@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/user-dashboard/userDashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@300&family=Squada+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-first-part">
+        <h3 class="date-elem"></h3>
+    </div>
+
+    <div class="modal-back-ground-page"></div>
+
+    <section class="dashboard_items">
+        <div class="one">
+            <div class="profile_picture">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+            </div>
+            <div class="user_info">
+                <h3>Administator</h3>
+                <p>User dashboard</p>
+            </div>
+        </div>
+
+        <div class="dashboard-menu-options two activePage">
+            Home
+            <i class="fa-solid fa-house icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options three">
+            Account
+            <i class="fa-solid fa-user icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options four">
+            Shopping cart
+            <i class="fa-solid fa-cart-shopping icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options five">
+            Inbox
+            <i class="fa-solid fa-inbox icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options six">
+            Favorites
+            <i class="fa-solid fa-star icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options seven">
+            Subscriptions
+            </i><i class="fa-solid fa-tree icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options eight">
+            Latest baskets
+            <i class="fa-solid fa-basket-shopping icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options nine">
+            Tickets
+            <i class="fa-solid fa-ticket icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options ten">
+            Addresses
+            <i class="fa-solid fa-location-dot icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options eleven">
+            Account balance
+            <i class="fa-solid fa-money-bill icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options twelve">
+            Gift cards
+            <i class="fa-solid fa-gift icon-menu"></i>
+        </div>
+
+        <div class="dashboard-menu-options thirteen"></div>
+
+        <div class="dashboard-menu-options fourteen"></div>
+
+        <div class="dashboard-menu-options fifteen">
+            Log out
+            <i class="fa-sharp fa-solid fa-door-open icon-menu"></i>
+        </div>
+
+    </section>
+
+    <main>
+        <section class="main-page">
+
+            <!-- Dashboard home page -->
+            <div class="user-dashboard">
+                <div class="user-acc-info">
+                    <p>First Name : Arsalan</p>
+                    <p>Last Name : Ghoochani</p>
+                    <p>Birth Date : 2003 - 4 - 18</p>
+                    <p>Email : arsalaghoochani15@gmail.com</p>
+                    <p>Phone number : +219458732020</p>
+                    <p>Job : Web develper</p>
+                    <p>Your address : Iran , isfahan </p>
+                    <button>
+                        Edit Account
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
+                <div class="user-chart-con">
+                    <h4>Your recent transaction :</h4>
+                    <canvas id="hello-chart"></canvas>
+                </div>
+                <div class="user-transactions">
+                    <div class="transaction">
+                        <p>Date : 8 - 3 - 2023</p>
+                        <button>View the invoice</button>
+                        <button>Buy again</button>
+                    </div>
+                    <div class="transaction">
+                        <p>Date : 8 - 3 - 2023</p>
+                        <button>View the invoice</button>
+                        <button>Buy again</button>
+                    </div>
+                    <div class="transaction">
+                        <p>Date : 8 - 3 - 2023</p>
+                        <button>View the invoice</button>
+                        <button>Buy again</button>
+                    </div>
+                    <div class="transaction">
+                        <p>Date : 8 - 3 - 2023</p>
+                        <button>View the invoice</button>
+                        <button>Buy again</button>
+                    </div>
+                    <div class="transaction">
+                        <p>Date : 8 - 3 - 2023</p>
+                        <button>View the invoice</button>
+                        <button>Buy again</button>
+                    </div>
+                </div>
+                <div class="recent-products-con">
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                    <div class="dash-prod-img-con"><img src="/images/prod-img.jpeg" alt=""></div>
+                </div>
+            </div>
+            <!--end of dashboard home page -->
+
+            <!-- Dashboard account page -->
+            <div class="user-account-page none">
+                <div class="user-account-info">
+                    <p>First name : Arsalan</p>
+                    <p>Last name : Ghoochani</p>
+                    <p>Country : Iran</p>
+                    <p>City : esfahan</p>
+                    <p>Postal code : 85889124</p>
+                    <p>Job : Web developer</p>
+                    <p>National Code : 12***728</p>
+                    <p>Password : *******</p>
+                    <div class="width-full flex-between">
+                        <p>Email : arsalanghoochani15@gmail.com</p>
+                        <span>
+                            <i class="fa-solid fa-at"></i>
+                        </span>
+                    </div>
+                    <div class="width-full flex-between">
+                        <p>Phone numbber : +345 90908564</p>
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                    </div>
+                    <div class="user-address-info">
+                        <h4>Addresses</h4>
+                        <button class="flex-between">
+                            <p>tabriz , khomeini street , mohtasham alley , bizhan apartment</p>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                        </button>
+                        <button class="flex-between">
+                            <p>esfahan , shiraz square , jami alley , behesht apartment</p>
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="edit-account-btn">Edit your account</button>
+                </div>
+                <div class="user-edit-account-part">
+                    <div>
+                        <label for="first-name">First name :</label>
+                        <input type="text" id="first-name" value="Arsalan">
+                    </div>
+                    <div>
+                        <label for="last-name">Last name :</label>
+                        <input type="text" id="last-name" value="Ghoochani">
+                    </div>
+                    <select name="country">
+                        <option value="iran">iran</option>
+                        <option value="USA">USA</option>
+                        <option value="canada">canada</option>
+                        <option value="iraq">iraq</option>
+                        <option value="saudi arabia">saudi arabia</option>
+                        <option value="porteqal">porteqal</option>
+                        <option value="spain">spain</option>
+                    </select>
+                    <select name="country">
+                        <option value="esfahan">esfahan</option>
+                        <option value="tabriz">tabriz</option>
+                        <option value="tehran">tehran</option>
+                        <option value="mashhad">mashhad</option>
+                        <option value="yazd">yazd</option>
+                        <option value="karaj">karaj</option>
+                        <option value="gilan">gilan</option>
+                    </select>
+                    <div>
+                        <label for="postal-code">Postal code :</label>
+                        <input type="number" id="postal-code" value="">
+                    </div>
+                    <div>
+                        <label for="job">Job :</label>
+                        <input type="text" id="job" value="Web developer">
+                    </div>
+                    <div>
+                        <label for="national-code">National code</label>
+                        <input type="number" id="national-code" value="Web developer">
+                    </div>
+                    <button class="control-btns reset">Reset</button>
+                    <button class="control-btns submit">Submit</button>
+                    <h3>Other things :</h3>
+                    <div class="edit-more-btns">
+                        <p>
+                            Change your password
+                        </p>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="edit-more-btns">
+                        <p>
+                            Change your email
+                        </p>
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="edit-more-btns">
+                        <p>
+                            Change your phone number
+                        </p>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="edit-more-btns">
+                        <p>
+                            Change addresses
+                        </p>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="edit-more-btns close-edit-page-btn">
+                        <p>
+                            Close page
+                        </p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+            <!--end of dashboard account page -->
+
+            <!-- Shopping cart page  -->
+            <div class="user-shopping-cart none">
+                <div class="first-part">
+                    <div class="cart-modal-one">
+                        <p>Total basket price : 978$</p>
+                        <p>Off price amount : 324$</p>
+                        <p>Your bill : 654 $</p>
+                        <button class="dispalyBasketNextSection">Choose address</button>
+                    </div>
+                    <div class="cart-modal-two">
+                        <h3>Buy subscription</h3>
+                        <div>
+                            <p>Free transportation</p>
+                            <p>Special offers</p>
+                            <p>Weekly free reward</p>
+                            <p>Weekly lotteries</p>
+                            <p>Longer returning time</p>
+                            <p>Free spotify subscription</p>
+                        </div>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="product-container">
+                        <div class="prod-item">
+                            <span>1</span>
+                            <p>Plant leila</p>
+                            <span>23 $</span>
+                            <img src="../images/prod-img.jpeg" alt="">
+                            <button>Remove from basket</button>
+                        </div>
+                        <div class="prod-item">
+                            <span>1</span>
+                            <p>Plant leila</p>
+                            <span>23 $</span>
+                            <img src="../images/prod-img.jpeg" alt="">
+                            <button>Remove from basket</button>
+                        </div>
+                        <div class="prod-item">
+                            <span>1</span>
+                            <p>Plant leila</p>
+                            <span>23 $</span>
+                            <img src="../images/prod-img.jpeg" alt="">
+                            <button>Remove from basket</button>
+                        </div>
+                        <div class="prod-item">
+                            <span>1</span>
+                            <p>Plant leila</p>
+                            <span>23 $</span>
+                            <img src="../images/prod-img.jpeg" alt="">
+                            <button>Remove from basket</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part">
+                    <div class="cart-modal-one">
+                        <p>Total basket price : 978$</p>
+                        <p>Off price amount : 324$</p>
+                        <p>Your bill : 670 $</p>
+                        <button>Pay the bill</button>
+                        <button class="displayBasketPrevSection">Go back</button>
+                    </div>
+                    <div class="cart-modal-two">
+                        <h3>Reciept</h3>
+                        <div>
+                            <div>Plant one <i>14$</i></div>
+                            <div>Plant two <i>67$</i></div>
+                            <div>Plant three <i>94$</i></div>
+                            <div>Plant four <i>84$</i></div>
+                            <div>Plant five <i>45$</i></div>
+                            <div>Plant six <i>32$</i></div>
+                            <div>Plant seven <i>64$</i></div>
+                            <div>Plant eight <i>22$</i></div>
+                            <div>Plant nine <i>16$</i></div>
+                            <div>Plant ten <i>70$</i></div>
+                            <div>Delievery <i>16$</i></div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <h3>Select your address :</h3>
+                        <div class="address-options-section">
+                            <h3>Addresses</h3>
+                            <div class="active-elem">
+                                <h4>Tabriz</h4>
+                                <p>khomeini street , mohtasham alley , bizhanapartment , tird unit , Postal code :
+                                    81890023
+                                <p>
+                            </div>
+                            <div>
+                                <h4>esfahan</h4>
+                                <p>shirazi square , jami alley , behesht apartment , forth unit , Postal code : 90908754
+                                </p>
+                            </div>
+                        </div>
+                        <h3>Select deleivery time : </h3>
+                        <div class="time-zone-section">
+                            <div class="time-zone">
+                                <p>2023-8-23</p>
+                                <p>monday</p>
+                                <span>9 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-24</p>
+                                <p>Tuesday</p>
+                                <span>9 - 22</span>
+                                <input class="hello" type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-25</p>
+                                <p>wednesday</p>
+                                <span>9 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-26</p>
+                                <p>thirsday</p>
+                                <span>9 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-27</p>
+                                <p>friday</p>
+                                <span>9 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-28</p>
+                                <p>saturaday</p>
+                                <span>12 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="time-zone">
+                                <p>2023-8-29</p>
+                                <p>sunday</p>
+                                <span>12 - 22</span>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                        <h3>Have off code ?</h3>
+                        <div class="off-code-section">
+                            <input type="text" placeholder="off code">
+                            <button>Confirm</button>
+                        </div>
+                        <h3>Choose pay method :</h3>
+                        <div class="pay-methods-section">
+                            <div class=""><img src="../images/credit-options/mac-os_318-10374.avif" alt=""></div>
+                            <div class=""><img src="../images/credit-options/unnamed.png" alt=""></div>
+                            <div class=""><img
+                                    src="../images/credit-options/credit-card-icon-sign-symbol-logo-free-vector.jpeg"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of Shopping cart page  -->
+
+            <!-- Inbox page -->
+            <div class="inbox none">
+                <div class="inbox-filter-con">
+                    <div>
+                        <p>All</p>
+                    </div>
+                    <select>
+                        <option value="newest">newest</option>
+                        <option value="oldest">oldest</option>
+                    </select>
+                    <div>
+                        <p>Seen</p>
+                    </div>
+                    <div>
+                        <p>Important</p>
+                    </div>
+                    <div>
+                        <p>Stared</p>
+                    </div>
+                    <div>
+                        <p>Spam</p>
+                    </div>
+                    <div>
+                        <p>Sent</p>
+                    </div>
+                    <div>
+                        <p>Trash</p>
+                    </div>
+                </div>
+                <div class="main-inbox-con shadow">
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="message shadow">
+                        <div>
+                            <h4>Order confirmed</h4>
+                            <p>2023 - 8 - 24 monday 9:23 PM </p>
+                        </div>
+                        <div class="message-address shadow">
+                            <h4>To :</h4>
+                            <p>Tabriz , jahan square , sepehr street , kambiz alley , linda apartment , second unit</p>
+                        </div>
+                        <div class="message-desc">
+                            <h4>description :</h4>
+                            <p>Lorem ipsu vitae tenetur, animi dolor saepe voluptate architecto nisi? Lorem ipsum dolor
+                                sit, amet consectetur adipisicing elit. Perspiciatis nulla impedit laudantium
+                                dignissimos magni veniam aperiam commodi omnis officia eligendi numquam, voluptatibus
+                                minus deleniti excepturi nostrum vitae? Suscipit, rem voluptatem!</p>
+                            <button class="button message-btn">See more</button>
+                        </div>
+                        <i class="accordin-btn fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <!--end of Inbox page -->
+
+            <!-- Favorites page -->
+            <div class="favorite-page none">
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-prod shadow">
+                    <div class="fav-prod-img">
+                        <img src="/images/prod-img.jpeg" alt="">
+                    </div>
+                    <div class="fav-prod-desc">
+                        <h3>Laleh plant</h3>
+                        <p>Price : 23 $</p>
+                        <p>Description : Lorem ipsum dolor sit adipisicing elit. Iusto ducimus dolorem id corporis
+                            ratione</p>
+                        <div>
+                            <button class="button">Add to basket</button>
+                            <button class="button">Remove from favorites</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of Favorites page -->
+
+            <!-- Subscription page  -->
+            <div class="subscription-page none">
+                <div class="sub-main-desc shadow">
+                    <h3>Plant store subscription</h3>
+                    <h4>Things you can get by having a subscription :</h4>
+                    <p>Free weekly lotteries</p>
+                    <p>Free transportation</p>
+                    <p>Special offers</p>
+                    <p>Free gift cards</p>
+                </div>
+                <div class="sub-offers">
+                    <h3>Our best offers : </h3>
+                    <div class="sub-offer shadow">
+                        <div>
+                            <h3>1 month subscription</h3>
+                            <p>free weekly lotteries</p>
+                            <p>free transportation</p>
+                            <p>Special offers</p>
+                            <p>only for 15$</p>
+                        </div>
+                        <span>Tier 1</span>
+                    </div>
+                    <div class="sub-offer shadow">
+                        <div>
+                            <h3>3 month subscription</h3>
+                            <p>free weekly lotteries</p>
+                            <p>free transportation</p>
+                            <p>Special offers</p>
+                            <p>one free gift card</p>
+                            <p>free booky.com subscription</p>
+                            <p>Only for 30$</p>
+                        </div>
+                        <span>Tier 2</span>
+                    </div>
+                    <div class="sub-offer shadow">
+                        <div>
+                            <h3>1 year subscription</h3>
+                            <p>free weekly lotteries</p>
+                            <p>free transportation</p>
+                            <p>Special offers</p>
+                            <p>one free gift card</p>
+                            <p>free spotify subscription</p>
+                            <p>Only for 45$</p>
+                        </div>
+                        <span>Tier 3</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Subscription page  -->
+
+            <!-- Latest basket page  -->
+            <div class="latest-baskets-page none">
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p>Whole basket price : 332 $</p>
+                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                    </div>
+                    <div class="basket-prods">
+                        <h3>Products :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p>Whole basket price : 332 $</p>
+                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                    </div>
+                    <div class="basket-prods">
+                        <h3>Products :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p>Whole basket price : 332 $</p>
+                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                    </div>
+                    <div class="basket-prods">
+                        <h3>Products :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p>Whole basket price : 332 $</p>
+                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                    </div>
+                    <div class="basket-prods">
+                        <h3>Products :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p>Whole basket price : 332 $</p>
+                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                    </div>
+                    <div class="basket-prods">
+                        <h3>Products :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p>from iran</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Latest basket page  -->
+
+            <!--Tickets page  -->
+            <div class="ticket-page none">
+                <div class="tickets-container">
+                    <h3 class="tickets-con-title">Your tickets :</h3>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="ticket shadow">
+                        <h3>Title : Error in sign up page</h3>
+                        <p>Date : 6 - 4 - 2023</p>
+                        <p>Status : answerd</p>
+                        <h4>Your text : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consectetur aperiam unde quaerat veniam aspernatur quia sit et debitis facere consequuntur
+                            ipsum vitae veritatis nemo, laboriosam qui odit sint error cum. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos id quos excepturi et velit voluptatibus fuga non rem,
+                            atque ea dignissimos dolore aliquid, ducimus rerum, sapiente repellat accusantium possimus!
+                            Assumenda.</p>
+                        <h4>Operator answer : </h4>
+                        <p class="ticket-desc shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                            animi beatae nemo officia fugit dolores, similique itaque explicabo qui. Suscipit tempora
+                            nam ab, itaque eaque labore voluptate quaerat praesentium repellendus.</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="ticket-form">
+                    <h3>Send a new ticket</h3>
+                    <p>Fill up inputs below and press on submit to send a ticket</p>
+                    <label for="ticket-title-input">Write down ticket subject :</label>
+                    <input id="ticket-title-input" type="text" placeholder="For example : problem with redirectoring">
+                    <select>
+                        <option value="Select">Select category ...</option>
+                        <option value="Error">Error in site</option>
+                        <option value="help">Get help</option>
+                        <option value="comment">Send your comments</option>
+                    </select>
+                    <label for="ticket-text-input">Write down descriptions :</label>
+                    <textarea id="ticket-text-input"></textarea>
+                    <button class="ticket-submit-button button">Submit ticket</button>
+                    <button class="ticket-reset-button">Reset forms</button>
+                </div>
+            </div>
+            <!--end of Tickets page  -->
+
+            <!-- Addresses page  -->
+            <div class="addresses-page none">
+                <div class="addresses-container">
+                    <h3>Your addresses</h3>
+                    <div class="address-item shadow">
+                        <div class="address-item-title">
+                            <h4>Tabriz</h4>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="address-item-desc">
+                            <p>Client name : Sohrab sepehri</p>
+                            <p>Postal code : 93935060</p>
+                            <p>Client number : 091360609345</p>
+                            <p class="shadow">Iran , Tabriz , fadak square , sinab street , goldan alley , roz apartment , sixth unit</p>
+                        </div>
+                    </div>
+                    <div class="address-item shadow">
+                        <div class="address-item-title">
+                            <h4>Tabriz</h4>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="address-item-desc">
+                            <p>Client name : Sohrab sepehri</p>
+                            <p>Postal code : 93935060</p>
+                            <p>Client number : 091360609345</p>
+                            <p class="shadow">Iran , Tabriz , fadak square , sinab street , goldan alley , roz apartment , sixth unit</p>
+                        </div>
+                    </div>
+                    <div class="address-item shadow">
+                        <div class="address-item-title">
+                            <h4>Tabriz</h4>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="address-item-desc">
+                            <p>Client name : Sohrab sepehri</p>
+                            <p>Postal code : 93935060</p>
+                            <p>Client number : 091360609345</p>
+                            <p class="shadow">Iran , Tabriz , fadak square , sinab street , goldan alley , roz apartment , sixth unit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-address-form">
+                    <h3>Add another address</h3>
+                    <select>
+                        <option value="select">select country</option>
+                        <option value="iran">iran</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Brazil">Brazil</option>
+                    </select>
+                    <select>
+                        <option value="select">select city</option>
+                        <option value="esfahan">esfahan</option>
+                        <option value="shiraz">shiraz</option>
+                        <option value="tabriz">tabriz</option>
+                        <option value="tehran">tehran</option>
+                    </select>
+                    <input type="text" placeholder="write down street name">
+                    <input type="text" placeholder="write down alley name">
+                    <input type="number" placeholder="enter postal code">
+                    <input type="text" placeholder="write down unit">
+                    <input type="text" placeholder="write down receiver full name">
+                    <input type="number" placeholder="enter receiver phone number">
+                    <textarea placeholder="Any other things to notice"></textarea>
+                    <button class="button">Submit</button>
+                    <button>Reset inputs</button>
+                </div>
+            </div>
+            <!-- end of Addresses page  -->
+
+            <!-- account balance page -->
+            <div class="account-balance-page none">
+                <div class="shadow account-transactions">
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>161 $</p>
+                        <p class="success">
+                            success
+                            <i class="fa-regular fa-circle-check"></i>
+                        </p>
+                        <button class="button">see more</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>161 $</p>
+                        <p class="success">
+                            success
+                            <i class="fa-regular fa-circle-check"></i>
+                        </p>
+                        <button class="button">see more</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>190 $</p>
+                        <p class="failed">
+                            Operation failed
+                            <i class="fa-regular fa-circle-xmark failed"></i>
+                        </p>
+                        <button class="button">see why</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>161 $</p>
+                        <p class="success">
+                            success
+                            <i class="fa-regular fa-circle-check"></i>
+                        </p>
+                        <button class="button">see more</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>161 $</p>
+                        <p class="success">
+                            success
+                            <i class="fa-regular fa-circle-check"></i>
+                        </p>
+                        <button class="button">see more</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>161 $</p>
+                        <p class="success">
+                            success
+                            <i class="fa-regular fa-circle-check"></i>
+                        </p>
+                        <button class="button">see more</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>190 $</p>
+                        <p class="failed">
+                            Operation failed
+                            <i class="fa-regular fa-circle-xmark failed"></i>
+                        </p>
+                        <button class="button">see why</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>190 $</p>
+                        <p class="failed">
+                            Operation failed
+                            <i class="fa-regular fa-circle-xmark failed"></i>
+                        </p>
+                        <button class="button">see why</button>
+                    </div>
+                    <div class="shadow">
+                        <p>2023 - 4 - 6</p>
+                        <p>8:30 PM</p>
+                        <p>190 $</p>
+                        <p class="failed">
+                            Operation failed
+                            <i class="fa-regular fa-circle-xmark failed"></i>
+                        </p>
+                        <button class="button">see why</button>
+                    </div>
+                </div>
+                <div class="shadow account-transaction-chart">
+                    <h4>Weekly transactions</h4>
+                    <canvas id="transaction-first-chart"></canvas>
+                </div>
+                <div class="shadow account-transaction-second-chart">
+                    <h4>Monthly transactions :</h4>
+                    <canvas id="transaction-second-chart"></canvas>
+                </div>
+            </div>
+            <!--end of account balance page -->
+
+            <!-- Gift card page -->
+            <div class="gift-card-page none">
+                <div class="cards-category">
+                    <select class="button">
+                        <option value="highest">highest price</option>
+                        <option value="lowest">lowest price</option>
+                    </select>
+                    <button class="button">for mothers</button>
+                    <button class="button">for fathers</button>
+                    <button class="button">for children</button>
+                    <button class="button">for students</button>
+                    <button class="button">for plant lovers</button>
+                    <button class="button">for plant haters</button>
+                    <button class="button">for filling the container</button>
+                </div>
+                <div class="cards-container">
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                    <div class="gift-card">
+                        <div class="top-part">
+                            <p>Plant store gift card</p>
+                            <img src="/images/simcard.png" alt="">
+                        </div>
+                        <div class="main-part">
+                            <span class="card-number">9891 9080 4324 6106</span>
+                        </div>
+                        <div class="bottom-part">
+                            <p>Expiration date : 2023-10-12</p>
+                            <p>#98fgd6Arc3</p>
+                        </div>
+                        <div class="hover-part">
+                            <p>Add to your account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of Gift card page -->
+
+        </section>
+    </main>
+
+    <script src="/public/chart.js"></script>
+    <script src="/public/dashboardApp.js"></script>
+</body>
+
+</html>

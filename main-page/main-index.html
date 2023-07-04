@@ -9,30 +9,61 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+
+    <!-- Modals background page -->
+        
     <div class="modal-back-ground-page"></div>
+
+    <!--end of Modals background page -->
+
+    <!-- Shopping cart section -->
+
     <section class="user-basket">
         <i class="fa-solid fa-xmark"></i>
         <h1>Your basket :</h1>
         <h1 class="basket-total-price">your total is : </h1>
         <button class="finish-reg">finish registration</button>
     </section>
+
+    <!--end of Shopping cart section -->
+
+    <!-- Header part -->
+
     <header>
+
+        <!-- Upper nav container  -->
 
         <nav class="main-nav">
             <div class="store-title">
                 <h1>Plant Store</h1>
-                <img src="/main-page/images/logo-plant-img.png" alt="store-logo">
+                <img src="/images/plant-site-logo.png" alt="store-logo">
                 <div class="search-bar">
                     <input type="text" placeholder="search">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="user-dashboard">
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <div class="user-options">
+                <span class="dashboard-icon">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                <span class="basket-icon">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </span>
                 <span class="basket-notif"></span>
+                <span class="burger-menu ">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <!-- dashboard options modal  -->
+                <ul class="dash-opt-modal">
+                    <li>Go to dashboard</li>
+                    <li>Log out</li>
+                </ul>
             </div>
         </nav>
+
+        <!--end of Upper nav container  -->
+
+        <!-- Lower nav container  -->
 
         <nav class="store-nav">
             <ul>
@@ -46,25 +77,159 @@
             </ul>
         </nav>
 
+        <!--end of Lower nav container  -->
+
     </header>
+
+    <!--end of Header part -->
+
+    <!-- Slider part -->
 
     <section class="slider">
         <button class="next-btn">
             <i class="fa-solid fa-angle-right"></i>
         </button>
-        <img class="slider-img" src="/main-page/images/1.avif" alt="">
+        <img class="slider-img" src="/images/1.avif" alt="">
         <button class="prev-btn">
             <i class="fa-solid fa-angle-left"></i>
         </button>
     </section>
 
+    <!--end of Slider part -->
+
+
+    <!-- trust infos  section -->
+
+    <h2 class="store-info-title">Why Plant store</h2>
+
+    <section class="store-information">
+        <div class="store-info">
+            <img src="/images/store-props/clock_1584892.png" alt="">
+            <h3>1 week return time</h3>
+        </div>
+        <div class="store-info">
+            <img src="/images/store-props/warranty_4400863.png" alt="">
+            <h3>1 montht warranty</h3>
+        </div>
+        <div class="store-info">
+            <img src="/images/store-props/shipped_411763.png" alt="">
+            <h3>Fastest transport</h3>
+        </div>
+        <div class="store-info">
+            <img src="/images/store-props/quality_1212158.png" alt="">
+            <h3>Best quality</h3>
+        </div>
+    </section>
+
+    <!--end of trust infos  section -->
+
+
+    <!-- Products container  -->
+
     <main class="shop-items-con"></main>
 
+    <!--end of Products container  -->
+
+
+    <!-- documents section -->
+
+    <h2 class="store-documents-title">Our documents</h2>
+
+    <section class="documents-con">
+        <div class="document">
+            <img src="/images/main-documents-img/5236601.jpg" alt="">
+            <h4>Have a better design with plants</h4>
+        </div>
+        <div class="document">
+            <img src="/images/main-documents-img/houseplant-background-plant-lovers.jpg" alt="">
+            <h4>Positive effects of Plants to kids </h4>
+        </div>
+        <div class="document">
+            <img src="/images/main-documents-img/v990-101.jpg" alt="">
+            <h4>Get more familiar with plants</h4>
+        </div>
+    </section>
+
+    <!--end of documents section -->
+
+
+    <!-- Sidebar section  -->
+
+    <section class="sidebar">
+        <span class="close-sidebar-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <h3>User option</h3>
+        <ul class="sidebar-user-options">
+            <li class="sidebar-user-dash">Dashboard</li>
+            <li class="sidebar-user-dash">Shopping cart</li>
+        </ul>
+        <h3>Categories</h3>
+        <ul class="sidebar-categories">
+            <li>Plants</li>
+            <li>Pots</li>
+            <li>Plant seed</li>
+            <li>Fertilizer</li>
+            <li>Poison</li>
+            <li>Gardening tools</li>
+            <li>Maintenance products</li>
+            <li class="logout-btn">Log out</li>
+        </ul>
+    </section>
+
+    <!--end of Sidebar section  -->
+
+
+    <!-- Footer part -->
+
     <footer>
-        <img src="/main-page/images/logo-plant-img.png" alt="store-logo">
-        <p>2023 , Esf IRI All Rights Reserved ©</p>
-        <p>contact us</p>
+        <section class="top-part">
+            <div class="go-up-btn">
+                Go up
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <p>2023 , Esf IRI All Rights Reserved ©</p>
+            <img src="/images/plant-site-logo.png" alt="store-logo">
+        </section>
+        <section class="bottom-part">
+            <div>
+                <h4>Products</h4>
+                <ul>
+                    <li>Plants</li>
+                    <li>Pots</li>
+                    <li>Gardening tools</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Client services</h4>
+                <ul>
+                    <li>Free transportation</li>
+                    <li>Free gifts</li>
+                    <li>How to return issued products </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Any problem ?</h4>
+                <ul>
+                    <li></li>
+                    <li>Report a bug</li>
+                    <li>Send us a ticket</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <ul>
+                    <li>Los angles , LS 50243 US</li>
+                    <li>+121 43678912</li>
+                    <li>plant@info.com</li>
+                </ul>
+            </div>
+        </section>
     </footer>
+
+    <!--end of Footer part -->
+
+
     <script src="./../public/mainApp.js"></script>
 </body>
 </html>
