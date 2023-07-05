@@ -20,7 +20,7 @@ body {
   width: 27.3rem;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 20px 15px;
   position: relative;
 }
@@ -56,11 +56,13 @@ form {
 
 input {
   width: 100%;
-  border: 2px solid #26860b;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
   outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 label {
@@ -70,10 +72,12 @@ label {
 .submit_button , .reset_button {
   margin-top: 0;
   padding: 10px;
-  border: 2px solid #a2ce96;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .submit_button:hover  , .reset_button:hover{
@@ -102,6 +106,7 @@ a {
   font-size: 14px;
   text-align: center;
   display: none;
+  color: #fff;
 }
 
 .success {
@@ -165,4 +170,15 @@ a {
 
 .hide-elem{
   display: none;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #79b185;
+  border: none;
+  box-shadow: none;
+}
+
+.button:hover {
+  background-color: #84a98c;
 }

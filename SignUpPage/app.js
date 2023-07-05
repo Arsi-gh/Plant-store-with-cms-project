@@ -181,29 +181,45 @@ const submitNewUser = async () => {
         }
       })
       if (isUserIn){
-        modalAlert(5000 , 'This username or email already exist , please try another' , '#e85165')
+        modalAlert('exist')
       } else {
         const { error } = await supabase
         .from('users')
         .insert({ name: newUser.name , email : newUser.email , password : newUser.password })
-        modalAlert(5000 , 'You have signed up successfuly' , '#67c981')
+        modalAlert(true)
       }
     }
   } else {
-    modalAlert(5000 , 'Your inserted properties are invalid , please rewrite them by validation guide and try again' , '#e85165')
+    modalAlert(false)
     nameValidationNotifsCon.classList.remove('hide-elem')
     emailValidationNotifsCon.classList.remove('hide-elem')
     passwordValidationNotifsCon.classList.remove('hide-elem')
   }
 }
 
-const modalAlert = (timer , desc , color) => {
+const modalAlert = (status) => {
+
   modal.style.display = 'block'
-  modal.style.backgroundColor = color
-  modal.innerHTML = desc 
-  setTimeout(() => {
-    modal.style.display = 'none'
-  }, timer);
+
+  if (status === 'exist'){
+    modal.style.background = 'inear-gradient(to right , rgb(242, 125, 125) , rgb(231, 85, 85))'
+    modal.innerHTML = 'This username or email already exist , please try another'
+    setTimeout(() => {
+      modal.style.display = 'none'
+    }, 5000);
+  } else if (status == true) {
+    modal.style.background = 'linear-gradient(to right , rgb(107, 193, 115) , rgb(52, 157, 85))'
+    modal.innerHTML = 'You have signed up successfuly'
+    setTimeout(() => {
+      modal.style.display = 'none'
+    }, 5000);
+  } else {
+    modal.style.background = 'linear-gradient(to right , rgb(242, 125, 125) , rgb(231, 85, 85))'
+    modal.innerHTML = 'Your inserted properties are invalid , please rewrite them by validation guide and try again'
+    setTimeout(() => {
+      modal.style.display = 'none'
+    }, 5000);
+  } 
 }
 
 nameInput.addEventListener('input' , usernameValidationCheck)

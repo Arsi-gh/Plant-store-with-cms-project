@@ -66,12 +66,13 @@ let imageUrls = [
   "/images/login-page-images/fiddle-leaf-fig-plant-pot.jpg",
   "/images/login-page-images/green-houseplant-background-plant-lovers.jpg",
   "/images/login-page-images/growth-close-up-environmental-lush-natural.jpg",
-  "/images/login-page-images/hanging-pothos-plant-gray.jpg",
   "/images/login-page-images/houseplant-background-plant-lovers.jpg",
   "/images/login-page-images/monstera-deliciosa-plant-pot (1).jpg",
-  "/images/login-page-images/monstera-deliciosa-plant-pot.jpg",
-  "/images/login-page-images/palm-tree-house-plant-pot.jpg",
-  "/images/login-page-images/snake-plant-pot.jpg",
+  "/images/login-page-images/5236601.jpg",
+  "/images/login-page-images/birds-nest-plant-beige-pot.jpg",
+  "/images/login-page-images/fiddle-leaf-fig-plant-pot.jpg",
+  "/images/login-page-images/green-houseplant-background-plant-lovers.jpg",
+  "/images/login-page-images/growth-close-up-environmental-lush-natural.jpg",
 ];
 
 const showPasswordFn = () => {
