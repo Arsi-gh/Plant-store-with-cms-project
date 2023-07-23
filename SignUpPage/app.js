@@ -155,7 +155,9 @@ const togglePassFn = () => {
 }
 
 const hideNotifsCon = (container) => {
-  container.classList.add('hide-elem')
+  setTimeout(() => {
+    container.classList.add('hide-elem')
+  }, 5000);
 }
 
 const submitNewUser = async () => {

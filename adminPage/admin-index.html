@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plant store admin dashboard</title>
     <link rel="stylesheet" href="/adminPage/admin-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -64,8 +64,8 @@
         </div>
 
         <div class="dashboard-menu-options seven">
-            Settings
-            <i class="fa-sharp fa-solid fa-gear icon-menu"></i>
+            Events
+            <i class="fa-solid fa-calendar-days icon-menu"></i>
         </div>
 
         <div class="dashboard-menu-options eight">
@@ -74,8 +74,8 @@
         </div>
 
         <div class="dashboard-menu-options nine">
-            Errors
-            <i class="fa-solid fa-triangle-exclamation icon-menu"></i>
+            Create tag
+            <i class="fa-solid fa-bug icon-menu"></i>
         </div>
 
         <div class="dashboard-menu-options ten">
@@ -94,13 +94,11 @@
         </div>
 
         <div class="dashboard-menu-options thirteen">
-            Events
-            <i class="fa-solid fa-calendar-days icon-menu"></i>
+
         </div>
 
         <div class="dashboard-menu-options fourteen">
-            Reports
-            <i class="fa-solid fa-bug icon-menu"></i>
+
         </div>
 
         <div class="dashboard-menu-options fifteen">
@@ -115,30 +113,66 @@
             <div class="users-list-container"></div>
 
             <!-- Add product Page  -->
-            <form action="">
-                <div class="form-inputs">
-                    <label for="new-prod-name">Enter Product Name : </label>
-                    <input id="new-prod-name" type="text" placeholder="example : Maryam Plant">
-                    <label for="new-prod-name">Enter Product Price :</label>
-                    <input id="new-prod-price" type="number" placeholder="example : 20$">
-                    <label for="new-prod-pic">Choose Product Picture :</label>
-                    <input id="new-prod-picture" type="file">
-                    <div class="form-btns">
-                        <input id="submit-product" type="submit">
-                        <button class="reset-page-btn">reset</button>
-                    </div>
+            <div class="add-prod-page none">
+                <div class="add-left-part">
+                    <input id="new-prod-name" type="text" placeholder="Write down product name :">
+                    <label for="new-prod-price">Enter product's price :</label>
+                    <input id="new-prod-price" type="number">
+                    <label for="new-prod-amonut">Enter product's amount :</label>
+                    <input id="new-prod-amount" type="number">
+                    <textarea placeholder="Write your description (Optional)"></textarea>
+                    <button class="submit-product button">Submit</button>
                 </div>
-                <img id="img-preview"></img>
-            </form>
+                <div class="add-right-part">
+                    <label for="prod-tag-selection">Select product tags :</label>
+                    <select id="prod-tag-selection">
+                        <option value="apartment plants">apartment plants</option>
+                        <option value="small plants">small plants</option>
+                        <option value="starter">starter</option>
+                    </select>
+                    <div class="prod-tags-container">
+                        
+                    </div>
+                    <label class="prod-image-label" for="prod-image-input">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>Upload Product Image</p>
+                    </label>
+                    <input id="prod-image-input" type="file">
+                    <div class="prod-image-preview-con">
+                        <img class="prod-image-preview">
+                        <i class="fa-regular fa-image image-icon"></i>
+                    </div>
+                    <button class="reset-page-btn reset-button">Reset forms</button>
+                </div>
+            </div>
 
             <!-- Product list  -->
-            <div class="prod-container"></div>
+            <div class="prod-container none"></div>
 
             <!-- Selling Status Page  -->
-            <canvas id="selling-chart"></canvas>
+            <section class="transaction-page none">
+                <div class="transactions-con">
+                    <div class="transaction">
+                        <p>Index : 1</p>
+                        <p>User name : Arsalan</p>
+                        <p>Date : 2023 - 6 - 3</p>
+                        <p>Price : 320 $</p>
+                        <button class="button">See more</button>
+                    </div>
+                </div>
+                <div class="transaction-chart-one">
+                    <canvas id="transaction-chart-canvas-one"></canvas>
+                </div>
+                <div class="transaction-chart-two">
+                    <canvas id="transaction-chart-canvas-two"></canvas>
+                </div>
+                <div class="transaction-chart-three">
+                    <canvas id="transaction-chart-canvas-three"></canvas>
+                </div>
+            </section>
 
             <!-- Edit product page  -->
-            <div class="edit-page">
+            <div class="edit-page none">
                 <div class="upper-edit-page">
                     <div class="edit-left-page">
                         <label for="new-prod-prop-name">Write down new product name :</label>
@@ -161,9 +195,419 @@
                     </div>
                     <button class="close-edit-page-btn">close page</button>
                 </div>
+            </div>
+
+            <!-- Notification page  -->
+            <div class="notification-page none">
+                <div class="messages">
+                    <h4>messages :</h4>
+                    <div class="message">
+                        <h4>From : Alireza ghorbani</h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>User message : </h4>
+                        <p class="message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur adipisicing
+                            elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt fugit eveniet
+                            voluptates reprehenderit</p>
+                    </div>
+                    <div class="message">
+                        <h4>From : Alireza ghorbani</h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>User message : </h4>
+                        <p class="message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur adipisicing
+                            elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt fugit eveniet
+                            voluptates reprehenderit</p>
+                    </div>
+                    <div class="message">
+                        <h4>From : Alireza ghorbani</h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>User message : </h4>
+                        <p class="message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur adipisicing
+                            elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt fugit eveniet
+                            voluptates reprehenderit</p>
+                    </div>
+                </div>
+                <div class="sub-messages">
+                    <h4>subscribers messages :</h4>
+                    <div class="sub-message">
+                        <h4>From : Alireza ghorbani <i class="fa-solid fa-tree"></i> </h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>subscriber message : </h4>
+                        <p class="sub-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                    <div class="sub-message">
+                        <h4>From : Alireza ghorbani <i class="fa-solid fa-tree"></i> </h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>subscriber message : </h4>
+                        <p class="sub-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                    <div class="sub-message">
+                        <h4>From : Alireza ghorbani <i class="fa-solid fa-tree"></i> </h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>subscriber message : </h4>
+                        <p class="sub-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                    <div class="sub-message">
+                        <h4>From : Alireza ghorbani <i class="fa-solid fa-tree"></i> </h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>subscriber message : </h4>
+                        <p class="sub-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                </div>
+                <div class="staff-messages">
+                    <h4>staff messages :</h4>
+                    <div class="staff-message">
+                        <h4>From : Alireza ghorbani</h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>Staff message : </h4>
+                        <p class="staff-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                    <div class="staff-message">
+                        <h4>From : Alireza ghorbani</h4>
+                        <p><b>Date : </b> 3th july 2023 - At 5:34 PM</p>
+                        <h4>Staff message : </h4>
+                        <p class="staff-message-text">Lorem ipsum dolor sit sit sitsit sitit sit amet consectetur
+                            adipisicing elit. Eaque, totam, ducimus, nemo harum recusandae illo odit placeat nesciunt
+                            fugit eveniet voluptates reprehenderit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events page -->
+            <div class="events-page none">
+                <div class="prev-events">
+                    <h4>Previous events :</h4>
+                    <div class="prev-event">
+                        <h5>Metting in parkland</h5>
+                        <p>time : 6:00 PM</p>
+                        <p>date : 4th of july 2023</p>
+                    </div>
+                    <div class="prev-event">
+                        <h5>Metting in parkland</h5>
+                        <p>time : 6:00 PM</p>
+                        <p>date : 4th of july 2023</p>
+                    </div>
+                    <div class="prev-event">
+                        <h5>Metting in parkland</h5>
+                        <p>time : 6:00 PM</p>
+                        <p>date : 4th of july 2023</p>
+                    </div>
+                    <div class="prev-event">
+                        <h5>Metting in parkland</h5>
+                        <p>time : 6:00 PM</p>
+                        <p>date : 4th of july 2023</p>
+                    </div>
+                </div>
+                <div class="ongoing-events">
+                    <h4>Ongoing events :</h4>
+                    <div class="ongoing-event">
+                        <h5>title : Off party</h5>
+                        <p>time : 8:00 PM</p>
+                        <p>date : 6th of april 2023</p>
+                        <button>cancel event</button>
+                    </div>
+                    <div class="ongoing-event">
+                        <h5>title : Off party</h5>
+                        <p>time : 8:00 PM</p>
+                        <p>date : 6th of april 2023</p>
+                        <button>cancel event</button>
+                    </div>
+                    <div class="ongoing-event">
+                        <h5>title : Off party</h5>
+                        <p>time : 8:00 PM</p>
+                        <p>date : 6th of april 2023</p>
+                        <button>cancel event</button>
+                    </div>
+                    <div class="ongoing-event">
+                        <h5>title : Off party</h5>
+                        <p>time : 8:00 PM</p>
+                        <p>date : 6th of april 2023</p>
+                        <button>cancel event</button>
+                    </div>
+                </div>
+                <div class="create-event">
+                    <h4>Create an event :</h4>
+                    <label>Write down meeting title :</label>
+                    <input type="text" placeholder="for example : meeting in green house park">
+                    <label>Select meeting date time :</label>
+                    <input type="date" placeholder="select the event's date time">
+                    <label for="">Write the descriptions you want to add :</label>
+                    <textarea placeholder="Your text here ..."></textarea>
+                    <button class="event-submit-button button">Submit</button>
+                    <button class="event-reset-button">reset</button>
+                </div>
+            </div>
+
+            <!-- Tickets page  -->
+            <div class="tickets-page none">
+                <div class="tickets-container">
+                    <div class="ticket">
+                        <p><b>From :</b> Saleh Salehi</p>
+                        <p><b>Title :</b> Problem with basket rendering</p>
+                        <p><b>Date : </b>3th of june 2023 at 7:00 PM</p>
+                        <h4>Description</h4>
+                        <p class="ticket-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+                            harum temporibus maxime. Impedit suscipit in cupiditate fugit minima! Dolores,
+                            exercitationem aliquid quae excepturi maiores quod</p>
+                        <button class="ticket-answer-button button">Answer this ticket</button>
+                    </div>
+                    <div class="ticket">
+                        <p><b>From :</b> Saleh Salehi</p>
+                        <p><b>Title :</b> Problem with basket rendering</p>
+                        <p><b>Date : </b>3th of june 2023 at 7:00 PM</p>
+                        <h4>Description</h4>
+                        <p class="ticket-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+                            harum temporibus maxime. Impedit suscipit in cupiditate fugit minima! Dolores,
+                            exercitationem aliquid quae excepturi maiores quod</p>
+                        <button class="ticket-answer-button button">Answer this ticket</button>
+                    </div>
+                    <div class="ticket">
+                        <p><b>From :</b> Saleh Salehi</p>
+                        <p><b>Title :</b> Problem with basket rendering</p>
+                        <p><b>Date : </b>3th of june 2023 at 7:00 PM</p>
+                        <h4>Description</h4>
+                        <p class="ticket-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+                            harum temporibus maxime. Impedit suscipit in cupiditate fugit minima! Dolores,
+                            exercitationem aliquid quae excepturi maiores quod</p>
+                        <button class="ticket-answer-button button">Answer this ticket</button>
+                    </div>
+                    <div class="ticket">
+                        <p><b>From :</b> Saleh Salehi</p>
+                        <p><b>Title :</b> Problem with basket rendering</p>
+                        <p><b>Date : </b>3th of june 2023 at 7:00 PM</p>
+                        <h4>Description</h4>
+                        <p class="ticket-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+                            harum temporibus maxime. Impedit suscipit in cupiditate fugit minima! Dolores,
+                            exercitationem aliquid quae excepturi maiores quod</p>
+                        <button class="ticket-answer-button button">Answer this ticket</button>
+                    </div>
+                    <div class="ticket">
+                        <p><b>From :</b> Saleh Salehi</p>
+                        <p><b>Title :</b> Problem with basket rendering</p>
+                        <p><b>Date : </b>3th of june 2023 at 7:00 PM</p>
+                        <h4>Description</h4>
+                        <p class="ticket-message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+                            harum temporibus maxime. Impedit suscipit in cupiditate fugit minima! Dolores,
+                            exercitationem aliquid quae excepturi maiores quod</p>
+                        <button class="ticket-answer-button button">Answer this ticket</button>
+                    </div>
+                </div>
+                <div class="ticket-answer-form">
+                    <label for="">Write your answer down below :</label>
+                    <textarea placeholder="Your text here ..."></textarea>
+                    <button class="button">submit your answer</button>
+                    <button class="ticket-reset-button reset-button">reset</button>
+                </div>
+            </div>
+
+            <!-- Reports page  -->
+            <div class="tag-page none">
+                <div class="create-tag-form">
+                    <input class="tag-name-input" type="text" placeholder="Enter tag name :">
+                    <textarea class="tag-desc-input" placeholder="Enter tag description (Optional)"></textarea>
+                    <button class="tag-submit-btn button">submit</button>
+                    <button class="tag-reset-button reset-button">reset</button>
+                </div>
+                <div class="tags-container">
+                    <div>apartment plants <i class="fa-regular fa-circle-xmark"></i></div>
+                    <div>plastic plants <i class="fa-regular fa-circle-xmark"></i></div>
+                    <div>tools <i class="fa-regular fa-circle-xmark"></i></div>
+                </div>
+            </div>
+
+            <!-- discount code page  -->
+            <div class="discount-code-page none">
+                <div class="dis-code-con">
+                    <div class="dis-code">
+                        <h4>Code name : summer-2023</h4>
+                        <p><b>Off percent : </b>30%</p>
+                        <p><b>Time remaining : </b>3 days</p>
+                        <button class="cancel-btn">Diactive</button>
+                    </div>
+                    <div class="dis-code">
+                        <h4>Code name : summer-2023</h4>
+                        <p><b>Off percent : </b>30%</p>
+                        <p><b>Time remaining : </b>3 days</p>
+                        <button class="cancel-btn">Diactive</button>
+                    </div>
+                    <div class="dis-code">
+                        <h4>Code name : summer-2023</h4>
+                        <p><b>Off percent : </b>30%</p>
+                        <p><b>Time remaining : </b>3 days</p>
+                        <button class="cancel-btn">Diactive</button>
+                    </div>
+                </div>
+                <div class="create-dis-code-form">
+                    <h3>Create a new discount code : </h3>
+                    <input type="text" placeholder="Enter code name">
+                    <input type="number" placeholder="Enter code off amonut (by percent)">
+                    <input type="number" placeholder="Enter code timer amount (by days)">
+                    <h4>Which type of users can use the code ?</h4>
+                    <select>
+                        <option value="all">All</option>
+                        <option value="sub">subscribers</option>
+                        <option value="staff">staff</option>
+                    </select>
+                    <h4>Any other description : </h4>
+                    <textarea placeholder="Your text here ..."></textarea>
+                    <button class="button">create code</button>
+                    <button class="reset-button">reset</button>
+                </div>
+            </div>
+
+            <!-- Agents page  -->
+            <div class="agents-page none">
+                <div class="agent-con">
+                    <div class="agent-img">
+                        <img src="/images/shop-logo.jpg" alt="">
+                        <p>Amir plant store</p>
+                    </div>
+                    <div class="agent-info">
+                        <h4>Agents info</h4>
+                        <p><b>Owner : </b>Amir soheilian</p>
+                        <p><b>Country : </b>Iran</p>
+                        <p><b>City : </b>Yazd</p>
+                        <p><b>Address : </b> Sepehr street , Amir plant store </p>
+                        <p><b>Number : </b>09134505650</p>
+                        <button class="button">See more about this agent</button>
+                    </div>
+                    <div class="agent-sell-chart">
+                        <canvas id="agent-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staffs page  -->
+            <div class="staff-page none">
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+                <div class="staff-item">
+                    <img src="/images/profile-pic.jpg" alt="">
+                    <h4>Name : Arsalan Ghoochani</h4>
+                    <p><b>Position : </b>Web developer</p>
+                </div>
+            </div>
 
         </section>
     </main>
+    <script src="/public/chart.js"></script>
     <script src="/public/adminApp.js"></script>
 </body>
 

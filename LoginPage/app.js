@@ -71,8 +71,6 @@ let imageUrls = [
   "/images/login-page-images/5236601.jpg",
   "/images/login-page-images/birds-nest-plant-beige-pot.jpg",
   "/images/login-page-images/fiddle-leaf-fig-plant-pot.jpg",
-  "/images/login-page-images/green-houseplant-background-plant-lovers.jpg",
-  "/images/login-page-images/growth-close-up-environmental-lush-natural.jpg",
 ];
 
 const showPasswordFn = () => {

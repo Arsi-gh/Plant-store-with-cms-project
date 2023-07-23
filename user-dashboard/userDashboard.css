@@ -18,7 +18,7 @@ body {
   width: 20rem;
   height: 3.5rem;
   position: fixed;
-  background-color: #84a98c;
+  background: linear-gradient(to right , rgb(85, 124, 85) , rgb(83, 169, 83));
   top: 0;
   right: 0;
   z-index: 20;
@@ -73,12 +73,16 @@ main > .main-page {
   flex-wrap: wrap;
 }
 
-.dashboard-menu-options {
+.dashboard-menu-options:hover {
+  background-color: #84a98c;
+}
+
+.dashboard-menu-options  , .fourteen:hover{
   background-color: #cad2c5;
 }
 
-.dashboard-menu-options:hover {
-  background-color: #84a98c;
+.fourteen{
+  cursor: auto;
 }
 
 .activePage {
@@ -898,11 +902,13 @@ table td {
   gap: 1rem;
   padding: 1rem;
   flex-wrap: wrap;
+  align-content: start;
   overflow: auto;
 }
 
 .basket {
   width: 49%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -916,6 +922,14 @@ table td {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
+}
+
+.basket-desc > p:last-child {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .basket-prods{
@@ -933,6 +947,21 @@ table td {
   padding: 1rem;
   background-color: #fff;
   width: 100%;
+}
+
+.basket-btns {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.basket-btns > * {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 0.6rem;
 }
 
 .basket-prod-item > img {
@@ -1278,6 +1307,108 @@ table td {
   grid-column: 3/6;
 }
 
+/* Become agent page styles  */
+
+.become-agent-page {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.become-agent-page > .agent-page-intro {
+  padding: 1rem;
+  width: 100%;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+
+.agent-page-intro-img{
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.agent-page-intro-img > img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.agent-page-intro-desc{
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.agent-page-intro-desc > p {
+  text-align: justify;
+}
+
+.agent-page-intro-two {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.agent-page-intro-two > * {
+  width: 49.5%;
+  display: flex;
+}
+
+.agent-page-intro-two > .left-part {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.agent-page-intro-two > .left-part > p {
+  text-align: justify;
+}
+
+.agent-page-intro-two > .right-part {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.agent-page-intro-two > .right-part > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.agent-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.agent-form > * {
+  min-width: 32.3%;
+  padding: 0.5rem ;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.agent-form > button {
+  width: 49.2%;
+  padding: 0.7rem;
+}
+
 
 /* modal background page  */
 
@@ -1321,10 +1452,20 @@ table td {
   border-radius: 5px;
   border: none;
   padding: 0.5rem;
+  box-shadow: none;
 }
 
 .button:hover {
-  background-color: #84a98c;
+  background-color: #8cb595;
+}
+
+.reset-button {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.reset-button:hover {
+  background-color: #e1e1e1;
 }
 
 .none {

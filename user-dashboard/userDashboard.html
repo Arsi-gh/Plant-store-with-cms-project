@@ -67,7 +67,7 @@
 
         <div class="dashboard-menu-options seven">
             Subscriptions
-            </i><i class="fa-solid fa-tree icon-menu"></i>
+            <i class="fa-solid fa-tree icon-menu"></i>
         </div>
 
         <div class="dashboard-menu-options eight">
@@ -95,7 +95,10 @@
             <i class="fa-solid fa-gift icon-menu"></i>
         </div>
 
-        <div class="dashboard-menu-options thirteen"></div>
+        <div class="dashboard-menu-options thirteen">
+            become agent
+            <i class="fa-solid fa-shop icon-menu"></i>
+        </div>
 
         <div class="dashboard-menu-options fourteen"></div>
 
@@ -126,7 +129,7 @@
                 </div>
                 <div class="user-chart-con">
                     <h4>Your recent transaction :</h4>
-                    <canvas id="hello-chart"></canvas>
+                    <canvas id="dash-transaction-chart"></canvas>
                 </div>
                 <div class="user-transactions">
                     <div class="transaction">
@@ -832,67 +835,37 @@
                 <div class="basket shadow">
                     <div class="basket-desc">
                         <h4>Shopped in 2023 - 8 - 4</h4>
-                        <p>Whole basket price : 332 $</p>
-                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
                     </div>
-                    <div class="basket-prods">
-                        <h3>Products :</h3>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
                     </div>
-                </div>
-                <div class="basket shadow">
-                    <div class="basket-desc">
-                        <h4>Shopped in 2023 - 8 - 4</h4>
-                        <p>Whole basket price : 332 $</p>
-                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
-                    </div>
-                    <div class="basket-prods">
-                        <h3>Products :</h3>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 2</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 5</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 3</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 1</p>
                             <p>23 $</p>
                         </div>
                     </div>
@@ -900,67 +873,37 @@
                 <div class="basket shadow">
                     <div class="basket-desc">
                         <h4>Shopped in 2023 - 8 - 4</h4>
-                        <p>Whole basket price : 332 $</p>
-                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
                     </div>
-                    <div class="basket-prods">
-                        <h3>Products :</h3>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
-                        <div class="basket-prod-item shadow">
-                            <img src="/images//prod-img.jpeg" alt="">
-                            <h4>Laleh plant</h4>
-                            <p>from iran</p>
-                            <p>23 $</p>
-                        </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
                     </div>
-                </div>
-                <div class="basket shadow">
-                    <div class="basket-desc">
-                        <h4>Shopped in 2023 - 8 - 4</h4>
-                        <p>Whole basket price : 332 $</p>
-                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
-                    </div>
-                    <div class="basket-prods">
-                        <h3>Products :</h3>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 2</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 5</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 3</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 1</p>
                             <p>23 $</p>
                         </div>
                     </div>
@@ -968,33 +911,189 @@
                 <div class="basket shadow">
                     <div class="basket-desc">
                         <h4>Shopped in 2023 - 8 - 4</h4>
-                        <p>Whole basket price : 332 $</p>
-                        <p>To : Tabriz , daryoush square , shamsi street, roya apartment , unit 2</p>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
                     </div>
-                    <div class="basket-prods">
-                        <h3>Products :</h3>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
+                    </div>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 2</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 5</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 3</p>
                             <p>23 $</p>
                         </div>
                         <div class="basket-prod-item shadow">
                             <img src="/images//prod-img.jpeg" alt="">
                             <h4>Laleh plant</h4>
-                            <p>from iran</p>
+                            <p><b>Count : </b> 1</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
+                    </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
+                    </div>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 2</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 5</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 3</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 1</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
+                    </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
+                    </div>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 2</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 5</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 3</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 1</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
+                    </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
+                    </div>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 2</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 5</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 3</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 1</p>
+                            <p>23 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket shadow">
+                    <div class="basket-desc">
+                        <h4>Shopped in 2023 - 8 - 4</h4>
+                        <p><b>Whole basket price : </b>332 $</p>
+                        <p><b>To : </b>Tabriz , daryoush square , shamsi street, roya apartment , second unit</p>
+                    </div>
+                    <div class="basket-btns">
+                        <button class="button">Buy again</button>
+                        <button class="basket-detail-btn reset-button">See detailes</button>
+                    </div>
+                    <div class="basket-prods none">
+                        <h3>Products you have bought :</h3>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 2</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 5</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 3</p>
+                            <p>23 $</p>
+                        </div>
+                        <div class="basket-prod-item shadow">
+                            <img src="/images//prod-img.jpeg" alt="">
+                            <h4>Laleh plant</h4>
+                            <p><b>Count : </b> 1</p>
                             <p>23 $</p>
                         </div>
                     </div>
@@ -1485,6 +1584,57 @@
                 </div>
             </div>
             <!--end of Gift card page -->
+
+            <!-- Become agent page  -->
+            <div class="become-agent-page none">
+                <div class="agent-page-intro">
+                    <div class="agent-page-intro-img">
+                        <img src="/images/shop-logo.jpg" alt="">
+                    </div>
+                    <div class="agent-page-intro-desc">
+                        <h3>Wanna become an agent ? </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione ullam veniam minus minima ea eveniet iusto aut voluptatem, reprehenderit quos vel doloribus accusamus esse praesentium aperiam inventore, aspernatur laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi est odio molestiae vero ipsum culpa ducimus sit, nesciunt dolorum tempore praesentium placeat non cum, consequuntur officiis reiciendis nobis cupiditate?</p>
+                    </div>
+                </div>
+                <div class="agent-page-intro-two">
+                    <div class="left-part">
+                        <h3>Average agents in plant store</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, cumque voluptate distinctio pariatur numquam recusandae officia nulla alias architecto modi blanditiis, iusto deserunt libero facere quod in necessitatibus fuga voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem optio facilis eum earum quia totam, odio ullam at ab cupiditate non, incidunt beatae eveniet ad assumenda nulla nisi recusandae excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, minima nesciunt consequatur hic dolore deserunt fuga id quod ratione laborum quo eum atque eligendi, adipisci, quas temporibus molestias harum recusandae.</p>
+                    </div>
+                    <div class="right-part">
+                        <canvas id="agent-page-canvas"></canvas>
+                    </div>
+                </div>
+                <h3>Become an agent :</h3>
+                <div class="agent-form">
+                    <input type="text" placeholder="Enter your full name">
+                    <input type="text" placeholder="Enter your national code">
+                    <input type="date" placeholder="Select your birth date">
+                    <select>
+                        <option value="select">select country</option>
+                        <option value="IR">iran</option>
+                        <option value="USA">usa</option>
+                        <option value="Canada">canada</option>
+                        <option value="Turkey">turkey</option>
+                    </select>
+                    <select>
+                        <option value="select">select city</option>
+                        <option value="tehran">tehran</option>
+                        <option value="esfahan">esfahan</option>
+                        <option value="tabriz">tabriz</option>
+                    </select>
+                    <input type="number" placeholder="Enter your phone number">
+                    <input type="email" placeholder="Enter your Email">
+                    <input type="text" placeholder="Street name">
+                    <input type="text" placeholder="Alley name">
+                    <input type="text" placeholder="pelak">
+                    <input type="text" placeholder="unit">
+                    <input type="number" placeholder="Postal code">
+                    <button class="button submit-agent-req">submit request</button>
+                    <button class="reset-button reset-agent-form">reset form</button>
+                </div>
+            </div>
+            <!--end of Become agent page  -->
 
         </section>
     </main>

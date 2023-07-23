@@ -24,6 +24,8 @@ const accBalancePage = $.querySelector(".account-balance-page");
 const accBalancePageBtn = $.querySelector(".eleven");
 const giftCardPage = $.querySelector(".gift-card-page");
 const giftCardPageBtn = $.querySelector(".twelve");
+const agentPage = $.querySelector('.become-agent-page')
+const agentPageBtn = $.querySelector('.thirteen')
 
 const allPages = [
   dashboard,
@@ -37,6 +39,7 @@ const allPages = [
   addressesPage,
   accBalancePage,
   giftCardPage,
+  agentPage
 ];
 const allBtns = [
   dashboardBtn,
@@ -50,9 +53,10 @@ const allBtns = [
   addressesPageBtn,
   accBalancePageBtn,
   giftCardPageBtn,
+  agentPageBtn
 ];
 
-const dashCtx = $.querySelector('#hello-chart')
+const dashCtx = $.querySelector('#dash-transaction-chart')
 const transFirstCtx = $.querySelector('#transaction-first-chart')
 const transSecCtx = $.querySelector('#transaction-second-chart')
 
@@ -66,11 +70,17 @@ const closeEditBtn = $.querySelector(".close-edit-page-btn");
 const editAccountSection = $.querySelector(".user-edit-account-part");
 let editPageDispalyStatus = false;
 
-//Basket variables 
+//Basket page variables 
 const basketFirstPart = $.querySelector('.first-part')
 const basketSecondPart = $.querySelector('.second-part')
 const displayNextBaksetBtn = $.querySelector('.dispalyBasketNextSection')
 const dispalyPrevBasketBtn = $.querySelector('.displayBasketPrevSection')
+
+//Lastest products page 
+const basketDetailBtns = $.querySelectorAll('.basket-detail-btn')
+
+//agent page intro 
+const agentIntroCtx = $.querySelector('#agent-page-canvas')
 
 // Functions
 
@@ -114,7 +124,7 @@ const displayBasketSections = (page) => {
     page.style.display = 'grid'
 }
 
-const userChartFn = () => {
+const chartGeneratorFn = () => {
   new Chart(dashCtx, {
     type: 'doughnut',
     data: {
@@ -154,12 +164,34 @@ const userChartFn = () => {
     },
   });
 
+  new Chart(agentIntroCtx, {
+    type: 'bar',
+    data: {
+      labels: ['july', 'october', 'june', 'april' , 'september'],
+      datasets: [{
+        label: 'Average store sells in months',
+        data: [12_000_000, 19_000_400, 3_000_000, 8_500_000 , 30_000_000],
+        borderWidth: 1,
+        backgroundColor : ['#efefef' , '#84a98c' , '#517258' , '#517559']
+      }]
+    },
+  });
+}
+
+const showBasketDetail = (event) => {
+  if (event.target.parentElement.nextElementSibling.classList[1]) {
+    event.target.parentElement.nextElementSibling.classList.remove('none')
+    event.target.innerText = 'Hide detailes'
+  } else {
+    event.target.parentElement.nextElementSibling.classList.add('none')
+    event.target.innerText = 'See detailes'
+  }
 }
 
 // Events handling
 
 window.addEventListener('load' , () => {
-  userChartFn()
+  chartGeneratorFn()
 })
 
 dashboardBtn.addEventListener("click", () => {
@@ -217,6 +249,11 @@ giftCardPageBtn.addEventListener("click", () => {
   pageButtonsStyle(giftCardPageBtn);
 });
 
+agentPageBtn.addEventListener("click" , () => {
+  displayPage(agentPage)
+  pageButtonsStyle(agentPageBtn)
+})
+
 accordinBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     accordionMessageHandling(event);
@@ -234,6 +271,13 @@ closeEditBtn.addEventListener('click' , () => {
 dispalyPrevBasketBtn.addEventListener('click' , () => {
     displayBasketSections(basketFirstPart)
 })
+
 displayNextBaksetBtn.addEventListener('click' , () => {
     displayBasketSections(basketSecondPart)
+})
+
+basketDetailBtns.forEach((button) => {
+  button.addEventListener('click' , (event) => {
+    showBasketDetail(event)
+  })
 })

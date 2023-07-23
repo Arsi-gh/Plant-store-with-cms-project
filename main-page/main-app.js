@@ -12,6 +12,9 @@ const navSearchBtn = $.querySelector(".fa-magnifying-glass");
 const userdashBtn = $.querySelector(".dashboard-icon");
 const userdashModal = $.querySelector(".dash-opt-modal");
 
+//Category nav buttons 
+const categoryBtns = $.querySelectorAll('.category-nav-button')
+
 // Slider variables
 const slider = $.querySelector(".slider-img");
 const sliderNextbtn = $.querySelector(".next-btn");
@@ -162,6 +165,13 @@ const goUp = () => {
   window.scrollTo(0, 0);
 };
 
+const categoryBtnStyle = (event) => {
+  categoryBtns.forEach((btn) => {
+    btn.classList.remove('active-category')
+  })
+  event.target.classList.add('active-category')
+}
+
 window.addEventListener("load", runSlider);
 window.addEventListener("load", generateProducts);
 basketBtn.addEventListener("click", displayBasket);
@@ -189,14 +199,8 @@ dashboardPageBtns.forEach((button) => {
   });
 });
 
-// userdashBtn.addEventListener("mouseover", () => {
-//   userdashModal.style.display = "block";
-// });
-
-// userdashBtn.addEventListener("mouseout", () => {
-//   setTimeout(() => {
-//     userdashModal.style.display = "none";
-//   }, 1000);
-// });
+categoryBtns.forEach((button) => {
+  button.addEventListener('click' , categoryBtnStyle)
+})
 
 goUpBtn.addEventListener("click", goUp);
