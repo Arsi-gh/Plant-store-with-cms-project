@@ -4,10 +4,9 @@ let template = document.createElement("template");
 template.innerHTML = `
 <link rel="stylesheet" href="/components/users-list-component/user-style.css">
 <div class="user">
-<h3 class="user-name"></h3>
-<h4 class="user-email"></h4> 
-<h4 class="user-pass"></h4>
-<button class="user-delete-btn">Kick User</button>
+<p class="user-name"></p>
+<p class="user-email"></p>
+<button class="user-delete-btn button">See more</button>
 </div>
 `;
 
@@ -22,16 +21,12 @@ class User extends HTMLElement {
     let container = this.shadowRoot.querySelector('.user')
     
     let userName = this.shadowRoot.querySelector(".user-name");
-    userName.innerHTML = `Name : ${this.getAttribute("name")}`;
+    userName.innerHTML = `<b>Name : </b>${this.getAttribute("name")}`;
     container.dataset.userName = this.getAttribute("name")
     
     let userEmail = this.shadowRoot.querySelector(".user-email");
-    userEmail.innerHTML = `Email : ${this.getAttribute("email")}`;
+    userEmail.innerHTML = `<b>Email : </b>${this.getAttribute("email")}`;
     container.dataset.userEmail =  this.getAttribute("email")
-
-    let userPass = this.shadowRoot.querySelector(".user-pass");
-    userPass.innerHTML = `Password : ${this.getAttribute("password").slice(0 , 6)}****`;
-    container.dataset.userPass = this.getAttribute("password")
 
     let kickBtn = this.shadowRoot.querySelector('.user-delete-btn')
     kickBtn.addEventListener('click' , () => {
@@ -50,7 +45,7 @@ class User extends HTMLElement {
   }
 
   static observedAttributes() {
-    ["user-name", "user-email" , "user-pass"];
+    ["user-name", "user-email"];
   }
 }
 

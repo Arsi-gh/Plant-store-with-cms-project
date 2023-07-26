@@ -110,7 +110,37 @@
         <section class="main-page">
 
             <!-- User list page -->
-            <div class="users-list-container"></div>
+            <div class="users-list-container">
+                <div class="users-con"></div>
+                <div class="selected-user-desc">
+                    <div class="user-desc-top-part">
+                        <div class="user-image-part">
+                            <div class="profile_picture">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="user-basic-desc">
+                            <p><b>first name</b> : Arsalan</p>
+                            <p><b>Last name</b>: Ghoochani</p>
+                        </div>
+                    </div>
+                    <div class="user-desc-bottom-part">
+                        <p><b>Phone number : </b> 0914505098</p>
+                        <p><b>User Email :</b>arsalanghoochani15@gmail.com</p>
+                        <p><b>Password :</b>Arslan2003</p>
+                        <p><b>Address :</b>Iran , gilan , nobahar street , kambiz alley , royal apartment</p>
+                        <p><b>Postal code :</b>8189504435</p>
+                        <p><b>National code :</b>1277213454</p>
+                        <p><b>Authorization :</b>Normal user</p>
+                        <p><b>Joined date :</b>23th march 2022</p>
+                        <button class="cancel-btn">Remove user</button>
+                    </div>
+                </div>
+            </div>
 
             <!-- Add product Page  -->
             <div class="add-prod-page none">
@@ -131,7 +161,7 @@
                         <option value="starter">starter</option>
                     </select>
                     <div class="prod-tags-container">
-                        
+
                     </div>
                     <label class="prod-image-label" for="prod-image-input">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -179,7 +209,10 @@
                         <input id="new-prod-prop-name" type="text" placeholder="Example : Roz plant">
                         <label for="new-prod-prop-price">Write down new product price :</label>
                         <input id="new-prod-prop-price" type="number" placeholder="Example : 12">
-                        <label for="new-prod-prop-img">Upload new product image :</label>
+                        <label class="image-input-label" for="new-prod-prop-img">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <p>Upload new product image</p>
+                        </label>
                         <input id="new-prod-prop-img" type="file">
                     </div>
                     <div class="edit-right-page image-prop">

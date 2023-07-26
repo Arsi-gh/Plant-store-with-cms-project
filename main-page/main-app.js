@@ -37,6 +37,8 @@ const basketPage = $.querySelector(".user-basket");
 const basketCloseBtn = $.querySelector(".fa-xmark");
 const basketNotif = $.querySelector(".basket-notif");
 const basketPriceTag = $.querySelector(".basket-total-price");
+const basketTitleElem = $.querySelector(".basket-title-elem")
+const basketImage = $.querySelector(".basket-image")
 const registerBtn = $.querySelector(".finish-reg");
 const basketBackGroundPage = $.querySelector(".modal-back-ground-page");
 export let basketTotalPrice = 0;
@@ -47,7 +49,7 @@ const goUpBtn = $.querySelector(".go-up-btn");
 
 export function modifyBasketPrice(value) {
   basketTotalPrice = value;
-  basketPriceTag.innerHTML = `${basketTotalPrice} $`;
+  basketPriceTag.innerHTML = `Your total is : ${basketTotalPrice} $`;
 }
 
 export function modifyBasketLength() {
@@ -124,15 +126,28 @@ const windowSizeChange = () => {
 
 const displayBasket = () => {
   basketPage.style.display = "flex";
+
+  if (basketPage.innerHTML.includes('basket-prod')){
+    basketPriceTag.style.display = 'block'
+    registerBtn.style.display = 'block'
+    basketTitleElem.style.display = 'none'
+    basketImage.style.display = 'none'
+  } else {
+    basketPriceTag.style.display = 'none'
+    registerBtn.style.display = 'none'
+    basketTitleElem.style.display = 'block'
+    basketTitleElem.innerHTML = 'Your basket is empty'
+    basketImage.style.display = 'block'
+  }
+
   basketBackGroundPage.style.display = "block";
   basketBackGroundPage.style.height = document.body.offsetHeight + 'px'
-  console.log(window.innerHeight)
 };
 
 const basketPriceCalculation = () => {
   let newProdPrice = +event.target.dataset.price;
   basketTotalPrice += newProdPrice;
-  basketPriceTag.innerHTML = `${basketTotalPrice} $`;
+  basketPriceTag.innerHTML = `Your total is : ${basketTotalPrice} $`;
 };
 
 const hideBasket = () => {

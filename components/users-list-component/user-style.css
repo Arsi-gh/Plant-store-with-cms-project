@@ -1,30 +1,24 @@
 .user{
-    padding: 5px;
+    padding: 0.3rem 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-.user-name , .user-email , .user-pass{
-    font-size: large;
-    font-weight: 300;
+    flex-wrap: wrap;
 }
 
-.user-delete-btn{
-    padding: 0.5rem 1rem;
-    font-size: 15px;
+.button {
     cursor: pointer;
-    border : none;
-    border-radius: 3px;
-    font-weight: 550;
-}
-
-.user-delete-btn{
-    background-color: #f37979;
-}
-
-.user-delete-btn:hover{
-    background-color: #e27272;
-}
+    background-color: #9ac5a3;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: rgb(42, 42, 42);
+  }
+  
+  .button:hover {
+    background-color: #84a98c;
+  }

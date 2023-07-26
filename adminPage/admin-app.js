@@ -64,6 +64,10 @@ const allButtons = [
   staffPageBtn,
 ];
 
+// users and products containers 
+const usersCon = $.querySelector('.users-con')
+const productsCon = $.querySelector('.products-con')
+
 // new product page contorl
 const productNameInput = $.querySelector("#new-prod-name");
 const productPriceInput = $.querySelector("#new-prod-price");
@@ -72,7 +76,7 @@ const prodTagSelection = $.querySelector("#prod-tag-selection");
 const prodTagsContainer = $.querySelector(".prod-tags-container");
 const productSubmitBtn = $.querySelector(".submit-product");
 const prodImagePreview = $.querySelector(".prod-image-preview");
-const prodImageIcon = $.querySelector(".image-icon")
+const prodImageIcon = $.querySelector(".image-icon");
 const resetBtn = $.querySelector(".reset-page-btn");
 
 //Edit selected products page
@@ -89,7 +93,9 @@ const pageBackground = $.querySelector(".modal-back-ground-page");
 //Canvas variables
 const transactionCanvasOne = $.querySelector("#transaction-chart-canvas-one");
 const transactionCanvasTwo = $.querySelector("#transaction-chart-canvas-two");
-const transactionCanvasThree = $.querySelector("#transaction-chart-canvas-three");
+const transactionCanvasThree = $.querySelector(
+  "#transaction-chart-canvas-three"
+);
 
 //Date element variable
 const dateElem = $.querySelector(".date-elem");
@@ -128,8 +134,8 @@ const toggleBtn = (currentBtn) => {
 };
 
 const displayProdImg = () => {
-  prodImageIcon.style.display = 'none'
-  prodImagePreview.style.display = 'block'
+  prodImageIcon.style.display = "none";
+  prodImagePreview.style.display = "block";
   const reader = new FileReader();
   const file = productImgInput.files[0];
   reader.addEventListener(
@@ -171,8 +177,8 @@ const addProduct = async (event) => {
 
 const resetEditPage = (event) => {
   event.preventDefault();
-  prodImagePreview.style.display = 'none'
-  prodImageIcon.style.display = 'block'
+  prodImagePreview.style.display = "none";
+  prodImageIcon.style.display = "block";
   productNameInput.value = "";
   productPriceInput.value = "";
   prodImagePreview.src = "";
@@ -251,7 +257,7 @@ const getUserDatas = async () => {
 
   if (data) {
     data.forEach((user) => {
-      usersListPage.insertAdjacentHTML(
+      usersCon.insertAdjacentHTML(
         "beforeend",
         `<list-user password="${user.password}" name="${user.name}" email="${user.email}"></list-user>`
       );
@@ -308,6 +314,10 @@ const generateTransactionsCharts = () => {
         },
       ],
     },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+    },
   });
 
   new Chart(transactionCanvasTwo, {
@@ -322,6 +332,10 @@ const generateTransactionsCharts = () => {
           backgroundColor: ["#efefef", "#84a98c", "#517258", "#517559"],
         },
       ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
     },
   });
 
@@ -338,6 +352,10 @@ const generateTransactionsCharts = () => {
         },
       ],
     },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+    },
   });
 
   new Chart(agentChartCanvas, {
@@ -353,6 +371,10 @@ const generateTransactionsCharts = () => {
         },
       ],
     },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+    },
   });
 };
 
@@ -366,12 +388,15 @@ const createTagFn = () => {
 };
 
 const helloWorld = () => {
-  console.log('henkjlf')
-}
+  console.log("henkjlf");
+};
 
 const addProdTag = (event) => {
-  prodTagsContainer.insertAdjacentHTML('beforeend' , `<div class="prod-tag"><p>${event.target.value}</p><i onclick="${helloWorld}" class="fa-regular fa-circle-xmark"></i></div>`)
-}
+  prodTagsContainer.insertAdjacentHTML(
+    "beforeend",
+    `<div class="prod-tag"><p>${event.target.value}</p><i onclick="${helloWorld}" class="fa-regular fa-circle-xmark"></i></div>`
+  );
+};
 
 window.addEventListener("load", () => {
   dateUpdate();
@@ -436,7 +461,7 @@ window.addEventListener("load", () => {
   productImgInput.addEventListener("input", displayProdImg);
   resetBtn.addEventListener("click", resetEditPage);
   tagSubmitBtn.addEventListener("click", createTagFn);
-  prodTagSelection.addEventListener("input" , addProdTag)
+  prodTagSelection.addEventListener("input", addProdTag);
 
   generateDatasList();
 });

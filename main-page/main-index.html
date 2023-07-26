@@ -21,9 +21,10 @@
     <!-- Shopping cart section -->
     <section class="user-basket">
         <i class="fa-solid fa-xmark"></i>
-        <h1>Your basket :</h1>
+        <h1 class="basket-title-elem">Your basket :</h1>
         <h1 class="basket-total-price">your total is : </h1>
         <button class="finish-reg">finish registration</button>
+        <img class="basket-image" src="/images/basket-shopping.png" alt="">
     </section>
     <!--end of Shopping cart section -->
 
@@ -43,9 +44,16 @@
                     </div>
                 </div>
                 <div class="user-options">
-                    <span class="dashboard-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </span>
+                    <div class="drop-down-menu">
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <div class="drop-down-options">
+                            <a href="/user-dashboard/userDashboard.html">Dashboard</a>
+                            <a href="#">Buy sub</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
                     <span class="basket-icon">
                         <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                     </span>
